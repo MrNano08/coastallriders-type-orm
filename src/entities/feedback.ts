@@ -13,7 +13,7 @@ export class Feedback {
     customer_name: string;
 
     @Column({length: 30})
-    sotial_media: string;
+    social_media: string;
 
     @Column({length: 500})
     customer_comment: string;
