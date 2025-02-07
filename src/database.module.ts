@@ -1,6 +1,4 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Hero } from './entities/hero';
 import { HeroModule } from './modules/hero.module';
@@ -22,7 +20,5 @@ import { FeedbackModule } from './modules/feedback.module';
     HeroModule,
     FeedbackModule
   ],
-  controllers: [AppController],
-  providers: [AppService],
 })
-export class AppModule {}
+export class DatabaseModule {}
