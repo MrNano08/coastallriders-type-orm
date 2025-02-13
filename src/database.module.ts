@@ -6,6 +6,8 @@ import { Feedback } from './entities/feedback';
 import { FeedbackModule } from './modules/feedback.module';
 import { Package } from './entities/packages';
 import { PackageModule } from './modules/packages.module';
+import { Who } from './entities/who';
+import { WhoModule } from './modules/who.module';
 
 @Module({
   imports: [
@@ -16,12 +18,13 @@ import { PackageModule } from './modules/packages.module';
       username: 'root',
       password: 'Admin',
       database: 'coastallriders',
-      entities: [Hero, Feedback, Package],
+      entities: [Hero, Feedback, Package, Who],
       synchronize: true, 
         }),
     HeroModule,
     FeedbackModule,
-    PackageModule
+    PackageModule,
+    WhoModule
   ],
 })
 export class DatabaseModule {}
