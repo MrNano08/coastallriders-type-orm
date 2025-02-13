@@ -12,6 +12,6 @@ export class Hero {
     @Column({length: 100})
     text: string;
 
-    @Column({length: 20})
+    @Column({length: 30})
     btnText: string;
 }
